@@ -17,7 +17,7 @@
                     <p>Jumlah Anggota Keluarga {{ i+1 }} : {{ data }} Orang</p>
                 </div>
                 Total Jumlah Anggota Keluarga yang ikut : {{ minimum_bus }}<br>
-                Minimun Bus Required : {{ parseInt(minimum_bus / 4).toFixed(2) }}
+                Minimun Bus Required : {{ Math.ceil(minimum_bus / 4) }}
             </div>
             <div v-else>
                 Input must be equal with count of family
